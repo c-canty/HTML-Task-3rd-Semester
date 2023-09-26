@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AndersBørjesson</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AndersBørjesson.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <style>
+                .navbar {
+                    background-color: #fff387 !important;
+                }             
+            </style>
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">AndersBørjesson</a>
+                
+
+                <div class="topnav">
+                    <a href="https://www.zealand.dk/kontakt/?usersearch_name=Anders+Kristian+B%C3%B8rjesson&usersearch_add=&search_area=14042&search_by=ro" class="nav-link text-dark">Zealand - ANBO</a>                       
+                    <div class="topnav-right">
+                        <a href="https://anbo-easj.dk/cv/" class="nav-link text-dark">CV</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <main role="main" class="pb-2">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="container-flex">
+        
+        <footer class="border-top footer text-muted text-center">
+            <style>
+                .footer {
+                    background-color: #fff387 !important;
+                }
+                /* Set a fixed font size for the links */
+                .footer p {
+                    font-size: 10px; /* Adjust the font size as needed for readability */
+                }
+                .br {
+                    display: block;
+                    margin-top: 0.5em;
+                }
+            </style>
+            <div class="container-fluid">
+                <p><a href="https://learn.microsoft.com/en-gb/">Microsoft Developer Network</a> | 
+                    <a href="https://learn.microsoft.com/en-gb/docs/">MSDN Library: Intro. til programmeringssprog mv.</a> 
+                    <br />
+                    <a href="https://anbo-easj.dk/bekendtgoerelser/">Bekendtgørelser</a> om datamatiker-uddannelsen, eksamen og lign.
+                    <a href="https://anbo-easj.dk/index.htm">Index</a>
+                </p>
+            </div>
+        </footer>
+          
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

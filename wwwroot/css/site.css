@@ -1,0 +1,54 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Add a background color to the top navigation */
+.topnav {   
+    overflow: hidden;
+}
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #333; /* Change text color to match the normal background color */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        background-color: transparent; /* Set the initial background to transparent */
+        transition: background-color 0.3s; /* Add a smooth transition for the background color change */
+    }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ffffff; /* Change background color to white on hover */
+            color: black; /* Change text color to black on hover */
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    float: right;
+}
+
+
